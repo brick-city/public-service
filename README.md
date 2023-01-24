@@ -21,6 +21,16 @@ npm install --save @brick-city/public-service
 
 ### General
 
+### 'deepFreeze(obj:Object)
+
+deepFreeze takes an object and recursively walks down the objects's own properties and deepFreeze (s) any objects it finds, and then freezes the object. Buffers are skipped. This was a drawback of other "deepFreeze" type functions which are tripped up by Buffers.
+
+```javascript
+import { deepFreeze } from 'public-service';
+
+deepFreeze(object)
+
+```
 ## Support
 
 Please [open an issue](https://github.com/brick-city/public-service/issues/new) for support.
