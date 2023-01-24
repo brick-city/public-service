@@ -1,0 +1,16 @@
+{
+
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "checkJs": true,
+        "allowJs": true,
+        "declaration":true,
+        "emitDeclarationOnly": true,
+        "declarationMap": true,
+        "outDir": "types",
+        "noImplicitAny": true,
+        "noImplicitReturns": false
+    },
+    "include": ["src/**/*", "*.js", "tests/test.js"],
+    "exclude": ["node_modules", "types"]
+}
