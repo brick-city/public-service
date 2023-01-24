@@ -31,6 +31,17 @@ import { deepFreeze } from 'public-service';
 deepFreeze(object)
 
 ```
+
+### `maskToBits(obj:Buffer):boolean[]`
+
+maskToBits takes a Buffer, and returns a boolean array which signifies which bits are set on the Buffer. Use when applications use individual bits of a buffer as a flag. (i.e. Change Data Capture in SQL server)
+
+```javascript
+import { maskToBits } from 'public-service';
+
+let flags = maskToBits(buffer);
+
+```
 ## Support
 
 Please [open an issue](https://github.com/brick-city/public-service/issues/new) for support.
