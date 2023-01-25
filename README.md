@@ -32,7 +32,7 @@ deepFreeze(object)
 
 ```
 
-### `maskToBits(obj:Buffer):boolean[]`
+### `maskToBits(mask:Buffer):boolean[]`
 
 maskToBits takes a Buffer, and returns a boolean array which signifies which bits are set on the Buffer. Use when applications use individual bits of a buffer as a flag. (i.e. Change Data Capture in SQL server)
 

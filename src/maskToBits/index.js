@@ -5,20 +5,20 @@
  *
  * Returns an array of boolean representing the bits in the buffer
  *
- * @param {Buffer} buffer The buffer to check the bits on
+ * @param {Buffer} mask The mask (buffer) to check the bits on
  * @returns {Array<boolean>} An array of booleans corresponding to the bits of the buffer
  */
 
-export const maskToBits = (buffer) => {
+export const maskToBits = (mask) => {
 
-    const bufferLength = buffer.byteLength;
+    const bufferLength = mask.byteLength;
 
     /**
      * @type {Array<boolean>}
      */
     const bits = [];
 
-    buffer.forEach((byte, index) => {
+    mask.forEach((byte, index) => {
 
         const i = (bufferLength - index - 1) * 8;
 
